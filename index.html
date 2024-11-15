@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="abrir" onclick="abrirFecha()">Abrir</button>
+    <dialog id="modal">
+        <div class="modal-header">
+            <h2>Modal</h2>
+        </div>
+        <div id="modal-body">
+            <div>
+                <div>Nome <input type="text" id="nome" oninput="gravarnome()"></div>
+                <div>Email <input type="text" id="ema"  oninput="gravaremail()"></div>
+                <div>senha <input type="password" id="senha"  oninput="gravarsenha()"></div>
+                <div>CPF <input type="text" id="CPF" oninput="gravarcpf()" required placeholder="XXX.XXX.XXX-XX" maxlength="14"></div>
+                <div>Telefone <input type="tel" id="tel" oninput="gravartel()" required placeholder="(xx) x xxxx-xxxx"></div>
+                <div><a href="abrir.html"><button id="abrir" onclick="abrirFechar()">Enviar</button></a></div>
+        </div>
+
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
